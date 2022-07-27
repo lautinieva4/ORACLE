@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles-home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap">
+<link rel="stylesheet" href="css/style-reset.css">
+<title>Encriptador | Desencriptador web</title>
+</head>
+<div id="contenido">
+<body>
+
+<header>
+<img src="img/logo.png" alt="logo">
+</header>
+
+<main class="container">
+        <section class="form-input">
+                <div>
+                <textarea type="text" class="input-text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="warning-box">
+                <p> ⚠ Ingrese solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="buttons-box">
+                        <button type="button" class="btnencriptar" onclick="btnencriptar()">Encriptar</button>
+                        <button type="button" class="btndesencriptar"onclick="btndesencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        
+        <section class="form-output">
+                <div>
+                <img src="img/muñeco.png" alt="muñeco">
+                <p class="info-p">Texto encriptado o desencriptado</p>
+                </div>
+                <div>
+                <textarea type="text" class="input-text-area" cols="40" rows="24"></textarea>
+                <button type="button" class="btncopiar"onclick="btncopiar()">Copiar</button>
+                <button type="button" class="btnborrar"onclick="btnborrar()">Borrar resultado</button>
+                </div> 
+        </section>
+</main>
+        
+        <footer>
+                <p>© Challenge Oracle ONE - de Lautaro Nieva</p>
+                <div class="contact">
+                        <ul>
+                                <li>
+                                        <a href="https://github.com/lautinieva4/text-encryption">
+                                                <img src="img/github.png" alt="github" target="_blank">
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="https://www.linkedin.com/in/Lautaro-Nieva//">
+                                                <img src="img/linkedin.png" alt="linkedin" target="_blank">
+                                        </a>
+                                </li>
+                        </ul>
+                </div>
+                
+        </footer>
+</body>
+</div>
+<script src="index.js"></script>
+</html>

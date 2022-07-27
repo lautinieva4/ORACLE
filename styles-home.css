@@ -1,0 +1,187 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+}
+header{
+    max-width: 67.5rem;
+    padding: 4.5rem 6rem;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    display: flex;
+    max-width: 67.5em;
+    margin-inline: auto;
+    padding-inline: 2.5rem;
+    gap: 2rem;
+    justify-content: center;
+}
+.form-input {
+    width: 100%;
+    max-width: 42.5rem;
+}
+.input-text {
+    width: 100%;
+    font-size: 2rem;
+    color: #0A3871;
+    border-radius: 15px;
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.warning-box {
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: .75rem;
+    color: #495057;
+    font-weight: bold;
+}
+.buttons-box {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btnencriptar {
+    color: #FFFFFF;
+    background: #0A3871; 
+    transition: 1s all;    
+}
+
+.btnencriptar:hover {
+    background: #0d4a95;
+    transform: scale(1.09);
+    color: #FFFFFF;
+}
+
+.btndesencriptar, .btncopiar,.btnborrar {
+    background: #D8DFE8; 
+    color: #0A3871; 
+    transition: 1s all;
+}
+
+.btndesencriptar:hover {
+    background: #cbd9ea;
+    transform: scale(1.09);
+}
+
+.btnencriptar, .btndesencriptar {
+    width: 100%;
+    padding: 1.5rem;
+    border: thin solid currentColor;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.form-output{
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    max-width: 25rem;
+    background: #FFFFFF; 
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+}
+.info-p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.input-text-area{
+    width: 100%;
+    color: #495057;
+    margin-bottom: 10px;
+    max-height: 21rem;
+    font-size: 2rem;
+    border-radius: 15px;
+    background: none;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.btncopiar {
+    width: 100%;
+    padding: 1.5rem;
+    border: thin solid currentColor;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btnborrar {
+    width: 100%;
+    padding: 1.5rem;
+    border: thin solid currentColor;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btncopiar:hover {
+    background: #eaedf2;
+    transform: scale(1.09);
+}
+.btnborrar:hover {
+    background: #eaedf2;
+    transform: scale(1.09);
+}
+footer {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.contact {
+    margin-top: 15px;
+}
+.contact li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding-left: 2rem;
+    }
+    
+    .container {
+        gap: 1rem;
+    }
+
+    .form-output {
+        max-width: 20rem;
+        padding-top: 5rem;
+    }
+
+    .info-p {
+        padding-top: 1rem;
+    }
+
+}
+@media screen and (max-width: 770px) {
+    .container {
+        padding-inline: 2.5rem;
+        flex-wrap: wrap;
+    }
+
+    .form-output {
+        margin-top: 4rem;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .info-p {
+        font-size: 0.7rem;
+    }
+}
+
