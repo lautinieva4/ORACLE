@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <main>
+    <form>
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreApellido" class="input-padron" required>
+
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input padron" required></textarea>
+
+    <fieldset>
+        <legend>¿Como le gustaría que lo contactemos?</legend>
+        
+        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> Email </label>
+        
+
+        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Teléfono </label>
+        
+
+        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+    </fieldset>
+
+    <fieldset>
+            <legend>¿En cuál horario prefiere ser atendido?</legend>
+            <select>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+        </select>
+    </fieldset>  
+        
+    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barberia Alura?</label>
+
+        <input type="submit" value="Enviar formulario" class="enviar">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>08h ~ 20h</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>08h ~ 20h</td>
+                
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>08h ~ 20h</td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+            <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+        </footer>
+    </body>
+</html>
+<script>
+    // Formulario, la etiqueta que lo representa es <form>.
+    //La etiqueta <input type="text" id="telefono">, para la entrada de datos del usuario.
+    //La etiqueta <label for="correoelectronico">Correo Electrónico</label> es una etiqueta para la entrada de datos para el <input>
+    //submit, sirve para crear el boton de "enviar"
+    //value, valida el boton
+    // width: 940px, sirve para centralizar se usa siempre
+    //padding,la propiedad padding sirve para cambiar el espaciado interno, entre el contenido y el borde
+    //--INPUTS--
+    //podemos crear un input dentro de un label, asociándolos.
+    //textarea, es una caja de texto la cual podes manipular el tamaño en la pagina, cols="" rows="", cantidad de columnas y filas
+    //<label for="radio-whatsapp"> Whatsapp </label>
+    //<input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">, el input type radio, sirve para crear el boton de seleccionar redondo
+    //name, sirve para que todos los elementos formen parte del mismo grupo
+    // <label><input type="checkbox"> boton cuadrado con tick, para seleccionar
+    // es muy importante crear y separar en clases, (class="") , para aplicar los estilos.
+    // La jerarquía va: inline > id > class > etiqueta
+    // CSS, #id,.class,etiqueta
+    //El select,es selector, un campo de selección de un ítem, y el option,representa cada opción del selector.
+    //mobileinputtypes.com, pagina para los input de celulares
+    //required en los input-radio,configura campos obligatorios, o sea, exige al usuario que algunos campos sean completados, a través del atributo required.
+    //placeholder, muestra una sugerencia para completar los campos.
+    //checked, genera un valor por efecto en la que deja una opcion marcada por padron
+    //fieldset, agrupa etiquetas que pertenecen al mismo grupo
+    //legend, reemplaza la etiqueta p, es la que usamos para un título de un grupo de campos en cualquier formulario.
+    //alt, descripcion imagen.
+    //transition, Utilizamos la propiedad transition para proporcionar una transición visual de un elemento.
+    //cursor: sirve para elegir el tipo
+    //transform, sirve para que los elementos puedan ser trasladados, rotados, escalados o sesgados de acuerdo a los valores establecidos. Ejemplos: transform: scale(1.2) rotate(70deg);
+    // La etiqueta table, representa la tabla.
+    //La etiqueta tr, representa la fila de la tabla.
+    //La etiqueta td, representa la celda de la tabla.
+    //La etiqueta thead, representa el encabezado de la tabla.
+    //La etiqueta tbody, representa el cuerpo de la tabla.
+    //La etiqueta th, representa la celda del encabezado de la tabla.
+    //La etiqueta tfoot, representa el pie de página de la tabla.
+</script>
